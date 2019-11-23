@@ -1,6 +1,9 @@
 .example {
   padding-bottom: 35px;
   background-color: @light-grey;
+
+  min-height: 705px;
+  .set-outline(magenta);
 }
 
 .example__description {
@@ -29,4 +32,19 @@
   .set-font-size(16px, 20px);
   color: @black;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+
+    min-height: 1085px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .example {
+
+    min-height: 645px;
+  }
 }
