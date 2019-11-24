@@ -2,6 +2,10 @@
   .set-outline(magenta);
 }
 
+.page-header__logo {
+  .set-outline(blue);
+}
+
 .promo {
   .set-outline(magenta);
 }
@@ -45,3 +49,33 @@
 .program-selection {
   .set-outline(magenta);
 }
+
+body {
+  background: url("../../../preview/cat-energy-catalog-mobile-menu.jpg") no-repeat 50% 0;
+  //background-size: 720px auto;
+  min-height: 750px;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    background: url("../../../preview/cat-energy-catalog-tablet.jpg") no-repeat 50% 0;
+    background-size: 768px auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  body {
+    background: url("../../../preview/cat-energy-catalog-desktop.jpg") no-repeat 50% 0;
+    background-size: 1391px auto;
+  }
+}
+
+//@media (min-width: @tablet-width) {
+//
+//}
+//
+//
+//@media (min-width: @desktop-width) {
+//
+//}

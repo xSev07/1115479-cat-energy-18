@@ -12,6 +12,14 @@
   margin-left: @margin;
 }
 
+.set-vertical-padding(@top, @bottom: @top) {
+  padding-top: @top;
+  padding-bottom: @bottom;
+}
+
 .set-outline(@color) {
   outline: 2px dashed @color;
+  background-color: fadeout(@color, 70%);
+  //background-color: inherit;
+  //outline: none;
 }

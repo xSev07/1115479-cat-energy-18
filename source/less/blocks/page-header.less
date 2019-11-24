@@ -1,3 +1,40 @@
 .page-header {
-  .set-horizontal-margin(@margin-mobile);
+  margin: 0 auto;
+  width: 320px;
+
+  min-height: 260px;
+}
+
+.page-header__logo {
+
+  display: block;
+  min-height: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 710px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .page-header__logo {
+    width: 175px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1220px;
+    min-height: 105px;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    width: 215px;
+    height: 59px;
+  }
 }

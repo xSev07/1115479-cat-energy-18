@@ -1,20 +1,154 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 22px;
   background-color: @green;
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   color: @white;
+
+  min-height: 500px;
+  .set-outline(purple);
+}
+
+.promo__wrapper {
+  width: 320px;
+
+  .set-outline(blue);
 }
 
 .promo__intro {
+  margin: 32px 25px 20px;
   .set-font-size(36px);
+  text-align: center;
   color: @white;
+
+  min-height: 72px;
+  .set-outline(green);
 }
 
 .promo__slogan {
+  margin: 0 25px 30px;
+  padding: 0;
   .set-font-size(14px);
+  text-align: center;
+
+  min-height: 14px;
+  .set-outline(yellow);
+}
+
+.promo__image {
+  margin: 0 auto;
+  padding-bottom: 7px;
+  width: 280px;
+
+  display: block;
+  min-height: 270px;
+  .set-outline(red);
 }
 
 .promo__selection-program {
+  margin: 0 auto;
+  .set-vertical-padding(11px);
+  width: 280px;
+  height: 40px;
   .set-font-size(14px, 18px);
+
+  .set-outline(white);
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+
+    min-height: 870px;
+  }
+
+  .promo__wrapper {
+    position: relative;
+    width: 708px;
+    padding-left: 90px;
+  }
+
+  .promo__intro {
+    margin: 55px 190px 35px 0px;
+
+    min-height: 130px;
+  }
+
+  .promo__slogan {
+    margin: 0;
+    margin-right: 190px;
+    padding: 0;
+
+    min-height: 20px;
+  }
+
+  .promo__image {
+    margin: 0;
+    margin-left: -90px;
+    padding: 0;
+
+    width: 708px;
+    height: 609px;
+  }
+
+  .promo__selection-program {
+    position: absolute;
+    bottom: 510px;
+    .set-vertical-padding(6px);
+    width: 245px;
+
+    min-height: 52px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .promo {
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+    min-height: 0;
+  }
+
+  .promo__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 80px;
+    width: 1220px;
+    min-height: 565px;
+  }
+
+  .promo__intro {
+    width: 450px;
+    margin: 115px 20px 30px;
+
+    min-height: 120px;
+  }
+
+  .promo__slogan {
+    width: 450px;
+    margin: 0 20px 50px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 0;
+    right: 220px;
+    margin: 0;
+
+    width: 552px;
+    height: 499px;
+  }
+
+  .promo__selection-program {
+    position: static;
+    margin: 0;
+    margin-left: 20px;
+    .set-vertical-padding(6px);
+    width: 235px;
+
+    min-height: 52px;
+  }
 }

@@ -1,21 +1,131 @@
 .programs {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  width: 320px;
+}
+
+.programs__list {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  padding: 35px 20px 15px;
+  background-color: @light-grey;
+
+  min-height: 267px;
+  .set-outline(blue);
 }
 
 .programs__title {
+  width: 170px;
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 30px;
   .set-font-size(24px, 37px);
   .set-font-weight();
   color: @black;
   text-transform: uppercase;
+
+  min-height: 30px;
+  .set-outline(green);
 }
 
-.programs__item {
-  background-color: @light-grey;
+.programs__description {
+  width: 240px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding-bottom: 25px;
+
+  min-height: 120px;
+  .set-outline(yellow);
 }
 
 .programs__to-program {
+  width: 120px;
   .set-font-size(16px);
   text-decoration: none;
   text-transform: uppercase;
   color: @black;
+
+  display: block;
+  min-height: 30px;
+  .set-outline(white);
+}
+
+@media (min-width: @tablet-width) {
+  .programs {
+    width: 708px;
+    padding-bottom: 55px;
+  }
+
+  .programs__list {
+    margin: 0;
+  }
+
+  .programs__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    padding-top: 80px;
+    padding-left: 50px;
+
+    min-height: 370px;
+  }
+
+  .programs__title {
+    width: 380px;
+    margin-left: 0;
+  }
+
+  .programs__description {
+    width: 380px;
+    margin-bottom: 25px;
+  }
+
+  .programs__to-program {
+    width: 155px;
+    margin-left: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .programs {
+    width: 1220px;
+    padding-bottom: 80px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1180px;
+    margin: 0 20px;
+  }
+
+  .programs__item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    width: 550px;
+
+    min-height: 355px;
+  }
+
+  .programs__title {
+    width: 280px;
+    margin-left: 155px;
+    margin-bottom: 70px;
+  }
+
+  .programs__description {
+    width: 450px;
+
+    min-height: 70px;
+  }
 }
