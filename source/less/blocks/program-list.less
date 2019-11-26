@@ -1,1 +1,25 @@
-//
+.program-list {
+  width: 280px;
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+
+  .set-outline(blue);
+  min-height: 160px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-list {
+    width: 628px;
+    margin: 0 40px 65px;
+
+    min-height: 195px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-list {
+    width: 570px;
+    margin: 0;
+  }
+}
