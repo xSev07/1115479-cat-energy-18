@@ -33,58 +33,64 @@
         <h2 class="visually-hidden">Анкета</h2>
         <p class="program-selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="program-selection__fieldset">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--info-general">
             <legend class="visually-hidden">Основные данные</legend>
-            <label>
-              Имя:*
-              <input type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label>
-              Вес (кг):*
-              <input type="text" name="weight" placeholder="7" required>
-            </label>
-            <label>
-              Возраст (лет):
-              <input type="text" name="age" placeholder="7">
-            </label>
-            <ul class="program-selection__program program-list">
-              <li class="program-list__option">
+            <div class="program-selection__container program-selection__container--info-general">
+              <div class="program-selection__general-info">
                 <label>
-                  <input class="program-list__input" type="radio" name="program" value="slim" checked>
-                  Похудение
+                  Имя:*
+                  <input type="text" name="name" placeholder="Барсик" required>
                 </label>
-              </li>
-              <li class="program-list__option">
                 <label>
-                  <input class="program-list__input" type="radio" name="program" value="pro">
-                  Набор массы
+                  Вес (кг):*
+                  <input type="text" name="weight" placeholder="7" required>
                 </label>
-              </li>
-              <li class="program-list__option">
                 <label>
-                  <input class="program-list__input" type="radio" name="program" value="advice">
-                  Не знаю (Нужен ваш совет)
+                  Возраст (лет):
+                  <input type="text" name="age" placeholder="7">
                 </label>
-              </li>
-            </ul>
+              </div>
+              <ul class="program-selection__program program-list">
+                <li class="program-list__option">
+                  <label>
+                    <input class="program-list__input" type="radio" name="program" value="slim" checked>
+                    Похудение
+                  </label>
+                </li>
+                <li class="program-list__option">
+                  <label>
+                    <input class="program-list__input" type="radio" name="program" value="pro">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="program-list__option">
+                  <label>
+                    <input class="program-list__input" type="radio" name="program" value="advice">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="program-selection__fieldset program-selection__fieldset--info-contacts">
             <legend class="program-selection__title">Контактные данные (владельца кота)</legend>
-            <label>
-              E-mail:*
-              <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label>
-              Телефон:*
-              <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="program-selection__container">
+              <label>
+                E-mail:*
+                <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label>
+                Телефон:*
+                <input type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="program-selection__fieldset">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--info-comment">
             <legend class="program-selection__title">Комментарий</legend>
             <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
             <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program-selection__fieldset">
+          <fieldset class="program-selection__fieldset program-selection__fieldset--info-additional">
             <legend class="program-selection__title">Дополнительно</legend>
             <ul class="program-selection__program program-list">
               <li class="program-list__option">
@@ -113,8 +119,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="program-selection__submit button button--green" type="submit">Отправить заявку</button>
-          <p class="program-selection__note">* — Обязательные поля</p>
+          <div class="program-selection__container program-selection__container--submit">
+            <button class="program-selection__submit button button--green" type="submit">Отправить заявку</button>
+            <p class="program-selection__note">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
