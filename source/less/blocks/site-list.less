@@ -17,13 +17,9 @@
   }
 
   .site-list__item {
-    padding: 9px 0;
+    padding: 7px 0;
     .set-font-size(18px, 25px);
     border-top: none;
-  }
-
-  .site-list__item a {
-    //color: @white;
   }
 
   .site-list__item--active {
@@ -33,5 +29,19 @@
 
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    width: 480px;
+  }
 
+  .site-list__item {
+    letter-spacing: 1px;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid @white;
+  }
+
+  .site-list__item a {
+    color: @white;
+  }
 }

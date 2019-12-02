@@ -82,7 +82,7 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     position: static;
-    margin-right: 20px;
+    padding-bottom: 4px;
   }
 
   .main-nav__toggle {
@@ -91,9 +91,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__list {
-    width: 490px;
+  .main-nav {
+    padding-bottom: 0;
+  }
 
-    min-height: 35px;
+  .main-nav__list {
+    // width: 490px;
+    //
+    // min-height: 35px;
   }
 }
