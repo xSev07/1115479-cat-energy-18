@@ -1,17 +1,17 @@
 .copyright {
-  width: 320px;
   padding: 20px;
 
   .set-outline(blue);
-  min-height: 75px;
 }
 
 .copyright__link {
+  display: flex;
+  align-items: center;
   padding-right: 30px;
   .set-font-size(16px);
   color: @grey;
+  text-decoration: none;
 
-  display: block;
   .set-outline(yellow);
   min-height: 35px;
 }
@@ -19,13 +19,13 @@
 @media (min-width: @tablet-width) {
   .copyright {
     width: 162px;
+    padding: 20px 30px 20px 0;
 
-    min-height: 64px;
+    // min-height: 64px;
   }
 
   .copyright__link {
-
-    min-height: 16px;
+    min-height: 0;
   }
 }
 

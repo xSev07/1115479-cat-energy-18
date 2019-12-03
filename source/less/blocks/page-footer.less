@@ -13,12 +13,17 @@
 }
 
 .page-footer__logo {
-  display: block;
-  width: 215px;
-  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+  min-height: 59px;
   margin: 0 auto 15px;
 
   .set-outline(blue);
+}
+
+.page-footer__logo-image {
+  width: 128px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,12 +38,9 @@
 
   .page-footer__menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 708px;
     padding: 0;
-
-    min-height: 145px;
   }
 }
 
