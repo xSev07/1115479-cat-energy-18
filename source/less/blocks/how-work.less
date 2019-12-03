@@ -5,10 +5,7 @@
 
 .how-work__header {
   width: 280px;
-  margin: 0 20px 37px;
-
-  min-height: 36px;
-  .set-outline(green);
+  margin: 0 20px 28px;
 }
 
 .how-work__list {
@@ -19,37 +16,61 @@
 }
 
 .how-work__item {
+  position: relative;
   margin-bottom: 20px;
+  .set-vertical-padding(6px);
+  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  min-height: 60px;
-  .set-outline(blue);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nutrients::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--add-water::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--food-replacement::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--changes::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
 }
 
 .how-work__description {
   margin: 0;
-  padding-left: 80px;
-  width: 280px;
-
-  .set-outline(yellow);
-  min-height: 60px;
+  .set-font-size(14px, 16px);
 }
 
 @media (min-width: @tablet-width) {
   .how-work {
     width: 708px;
     padding-bottom: 55px;
+    counter-reset: advantage;
   }
 
   .how-work__header {
     width: 650px;
     margin: 0;
-    margin-bottom: 65px;
-
-    min-height: 60px;
+    margin-bottom: 35px;
+    .set-font-size(60px);
   }
 
   .how-work__list {
@@ -61,7 +82,11 @@
 
   .how-work__item {
     width: 240px;
-    margin-bottom: 87px;
+    min-height: 270px;
+    margin-bottom: 47px;
+    padding-top: 150px;
+    padding-right: 26px;
+    padding-left: 0;
 
     &:nth-child(2n+1) {
       margin-right: 145px;
@@ -71,15 +96,26 @@
       margin-bottom: 0;
     }
 
-    min-height: 230px;
+    &::before {
+      top: 37px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      counter-increment: advantage;
+      content: counter(advantage);
+      position: absolute;
+      top: 0;
+      left: 114px;
+      z-index: -1;
+      .set-font-size(280px);
+      color: fade(@black, 10%);
+    }
   }
 
   .how-work__description {
-    width: 240px;
-    padding-top: 110px;
-    padding-left: 0;
-
-    min-height: 100%;
+    .set-font-size(16px, 22px);
   }
 }
 
@@ -92,14 +128,12 @@
 
   .how-work__header {
     width: 850px;
-    margin-bottom: 62px;
-    margin-left: 20px;
+    margin-bottom: 34px;
   }
 
   .how-work__list {
     justify-content: space-between;
-    width: 1188px;
-    margin: 0 20px;
+    width: auto;
   }
 
   .how-work__item {
@@ -109,8 +143,6 @@
     &:nth-child(2n+1) {
       margin-right: 0;
     }
-
-    min-height: 220px;
   }
 
   .how-work__description {
