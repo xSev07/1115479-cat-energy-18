@@ -1,5 +1,5 @@
 .programs {
-  padding-bottom: 30px;
+  padding-bottom: 17px;
   width: 320px;
 }
 
@@ -51,7 +51,6 @@
 }
 
 .programs__title {
-  width: 170px;
   margin: 0;
   margin-left: 71px;
   margin-bottom: 29px;
@@ -59,34 +58,43 @@
   .set-font-weight();
   color: @black;
   text-transform: uppercase;
-
-  // min-height: 30px;
-  // .set-outline(green);
 }
 
 .programs__description {
-  width: 240px;
   margin: 0;
   margin-bottom: 19px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+  .set-font-size(16px, 18px);
+  letter-spacing: 1px;
   border-bottom: 1px solid @grey;
-
-  min-height: 113px;
-  // .set-outline(blue);
 }
 
 .programs__to-program {
-  width: 120px;
+  position: relative;
+  padding-right: 40px;
   .set-font-size(16px);
   text-decoration: none;
   text-transform: uppercase;
   color: @black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    width: 24px;
+    height: 11px;
+    background: url("../../img/icon-right-arrow-long.svg") no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .programs {
     width: 708px;
-    padding-bottom: 55px;
+    padding-bottom: 45px;
+
+    // Временно, пока нормальная графика не появится
+    margin-top: -8px;
   }
 
   .programs__list {
@@ -97,25 +105,56 @@
     &:not(:last-child) {
       margin-bottom: 30px;
     }
-    padding-top: 80px;
-    padding-left: 50px;
 
-    min-height: 370px;
+    padding: 77px 270px 61px 53px;
+
+    &--pro {
+      padding-right: 306px;
+    }
+
+    &::before {
+      top: 92px;
+      right: 61px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      top: 79px;
+      right: 90px;
+      left: auto;
+      width: 143px;
+      height: 196px;
+    }
+
+    &--pro::after {
+      top: 136px;
+      right: 28px;
+      left: auto;
+      width: 268px;
+      height: 149px;
+    }
   }
 
   .programs__title {
-    width: 380px;
+    margin-bottom: 24px;
     margin-left: 0;
+    .set-font-size(36px);
   }
 
   .programs__description {
-    width: 380px;
-    margin-bottom: 25px;
+    margin-bottom: 58px;
+    padding: 0;
+    .set-font-size(18px, 24px);
+    border-bottom: none;
   }
 
   .programs__to-program {
-    width: 155px;
     margin-left: 0;
+    padding-right: 50px;
+    .set-font-size(18px);
+    letter-spacing: 1px;
   }
 }
 
@@ -123,15 +162,13 @@
 @media (min-width: @desktop-width) {
   .programs {
     width: 1220px;
-    padding-bottom: 80px;
+    padding-bottom: 75px;
   }
 
   .programs__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 1180px;
-    margin: 0 20px;
   }
 
   .programs__item {
@@ -139,20 +176,43 @@
       margin-bottom: 0;
     }
 
-    width: 550px;
+    width: 570px;
+    padding: 77px 55px 60px 52px;
 
-    min-height: 355px;
+    &::before {
+      top: 47px;
+
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: 41px;
+      right: auto;
+      left: 66px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: 69px;
+      right: auto;
+      left: 34px;
+      width: 134px;
+      height: 56px;
+    }
   }
 
   .programs__title {
-    width: 280px;
-    margin-left: 155px;
+    margin-left: 162px;
     margin-bottom: 70px;
   }
 
   .programs__description {
-    width: 450px;
-
-    min-height: 70px;
+    margin-bottom: 36px;
+    // width: 450px;
+    //
+    // min-height: 70px;
   }
 }
