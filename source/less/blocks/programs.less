@@ -10,38 +10,69 @@
 }
 
 .programs__item {
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-  padding: 35px 20px 15px;
+  padding: 30px 20px 20px;
   background-color: @light-grey;
 
-  min-height: 267px;
-  .set-outline(blue);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: @green;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 29px;
+    width: 36px;
+    height: 50px;
+    background: url("../../img/icon-cat-slim.svg") no-repeat;
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 14px;
+    width: 66px;
+    height: 28px;
+    background: url("../../img/icon-cat-pro.svg") no-repeat;
+  }
 }
 
 .programs__title {
   width: 170px;
   margin: 0;
-  margin-left: 70px;
-  margin-bottom: 30px;
+  margin-left: 71px;
+  margin-bottom: 29px;
   .set-font-size(24px, 37px);
   .set-font-weight();
   color: @black;
   text-transform: uppercase;
 
-  min-height: 30px;
-  .set-outline(green);
+  // min-height: 30px;
+  // .set-outline(green);
 }
 
 .programs__description {
   width: 240px;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 19px;
   padding-bottom: 25px;
+  border-bottom: 1px solid @grey;
 
-  min-height: 120px;
-  .set-outline(yellow);
+  min-height: 113px;
+  // .set-outline(blue);
 }
 
 .programs__to-program {
@@ -50,10 +81,6 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @black;
-
-  display: block;
-  min-height: 30px;
-  .set-outline(white);
 }
 
 @media (min-width: @tablet-width) {
