@@ -1,10 +1,15 @@
 .site-list__item {
-  .set-vertical-padding(22px, 23px);
+  border-top: 1px solid @border-grey;
+}
+
+.site-list__link {
+  display: block;
+  padding: 22px 20px 23px;
   .set-font-size(20px);
   .set-font-weight();
   text-align: center;
   text-transform: uppercase;
-  border-top: 1px solid @border-grey;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,9 +22,12 @@
   }
 
   .site-list__item {
+    border-top: none;
+  }
+
+  .site-list__link {
     padding: 7px 0;
     .set-font-size(18px, 25px);
-    border-top: none;
   }
 
   .site-list__item--active {
@@ -33,15 +41,12 @@
     width: 480px;
   }
 
-  .site-list__item {
-    letter-spacing: 1px;
-  }
-
   .site-list__item--active {
     border-bottom: 2px solid @white;
   }
 
-  .site-list__item a {
+  .site-list__link {
+    letter-spacing: 1px;
     color: @white;
   }
 }

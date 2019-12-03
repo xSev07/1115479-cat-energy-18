@@ -3,10 +3,13 @@
   width: 320px;
 }
 
-.page-header__logo {
-  //padding: 0 @margin-mobile;
+.page-header__logo-link {
   display: block;
-  padding: 13px 19px;
+  padding: 13px 15px 7px;
+}
+
+.page-header__logo {
+  font-size: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,7 +21,7 @@
     align-items: flex-end;
   }
 
-  .page-header__logo {
+  .page-header__logo-link {
     width: 176px;
     height: 56px;
     padding: 0;
@@ -32,7 +35,7 @@
     justify-content: space-between;
   }
 
-  .page-header__logo {
+  .page-header__logo-link {
     width: 200px;
     height: 55px;
   }
