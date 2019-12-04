@@ -1,15 +1,13 @@
 .page-footer {
   width: 320px;
   margin: 0 auto;
+  background-color: @light-grey;
 
   min-height: 710px;
 }
 
 .page-footer__menu {
   .set-vertical-padding(20px);
-  background-color: @light-grey;
-
-  background-color: inherit;
 }
 
 .page-footer__logo {
@@ -18,12 +16,14 @@
   align-items: middle;
   min-height: 59px;
   margin: 0 auto 15px;
-
-  .set-outline(blue);
 }
 
 .page-footer__logo-image {
   width: 128px;
+}
+
+.page-footer__social {
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,13 +34,24 @@
   .page-footer__logo {
     width: 132px;
     margin: 0;
+    margin-right: 80px;
+    margin-left: 30px;
   }
 
   .page-footer__menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    margin-right: 30px;
+    margin-left: auto;
   }
 }
 
@@ -48,8 +59,7 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: auto;
-
-    min-height: 150px;
+    margin-bottom: 55px;
   }
 
   .page-footer__menu {
@@ -57,10 +67,12 @@
   }
 
   .page-footer__logo {
-    margin-left: 20px;
+    min-height: 0;
+    margin-right: 337px;
+    margin-left: 0;
   }
 
   .page-footer__copyright {
-    margin-right: 20px;
+    margin-right: 0;
   }
 }
