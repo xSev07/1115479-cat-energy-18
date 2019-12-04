@@ -1,13 +1,19 @@
 .goods {
   width: 320px;
   padding-bottom: 25px;
+}
 
-  min-height: 1670px;
+.goods__content {
+  width: 138px;
 }
 
 .goods__title {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 13px;
   .set-font-size(16px, 20px);
   .set-font-weight();
+  text-transform: uppercase;
 }
 
 .goods__list {
@@ -17,11 +23,16 @@
 }
 
 .goods__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   width: 320px;
-  padding: 0 20px;
+  padding: 0 20px 24px;
+  border: 1px solid @light-grey;
 
-  .set-outline(green);
-  min-height: 209px;
+  &:not(:first-child) {
+    border-top: none;
+  }
 }
 
 .goods__link {
@@ -29,7 +40,18 @@
   color: @black;
 }
 
+.goods__link-image {
+  .set-font-size(0);
+}
+
+.goods__picture {
+  font-size: 0;
+}
+
 .goods__to-order {
+  display: block;
+  width: 280px;
+  .set-vertical-padding(10px);
   .set-font-size(16px, 20px);
 }
 
@@ -52,12 +74,21 @@
   .goods__item {
     width: 324px;
     margin-bottom: 57px;
+    flex-direction: column;
+    align-items: center;
+    background-color: @light-grey;
+    border: none;
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+  }
 
-    min-height: 515px;
+  .goods__image {
+    width: 324px;
+
+    // Временно, пока не появится нормальная графика
+    min-height: 200px;
   }
 }
 

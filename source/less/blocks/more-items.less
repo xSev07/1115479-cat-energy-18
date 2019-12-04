@@ -1,15 +1,39 @@
 .more-items {
-  padding-top: 50px;
+  position: relative;
+  padding-top: 79px;
   padding-bottom: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 144px;
+    width: 30px;
+    height: 30px;
+    background: url("../../img/icon-plus.svg") no-repeat;
+  }
 }
 
 .more-items__title {
+  margin: 0 auto 7px;
+  width: 80%;
   .set-font-size(16px, 20px);
   .set-font-weight();
   color: @black;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .more-items__description {
+  margin: 0 auto 23px;
+  width: 90%;
   .set-font-size(12px, 16px);
   color: @black;
+  text-align: center;
+}
+
+.more-items__show-all {
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
