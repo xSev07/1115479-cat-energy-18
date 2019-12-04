@@ -8,6 +8,7 @@
 }
 
 .goods__title {
+  width: 80px;
   margin: 0;
   margin-top: 22px;
   margin-bottom: 13px;
@@ -74,9 +75,10 @@
   .goods__item {
     width: 324px;
     margin-bottom: 57px;
+    padding: 0 35px 40px;
     flex-direction: column;
-    align-items: center;
-    background-color: @light-grey;
+    // align-items: center;
+    background: linear-gradient(transparent 85px, @light-grey 85px);
     border: none;
 
     &:nth-last-child(-n + 2) {
@@ -84,11 +86,30 @@
     }
   }
 
+  .goods__link-image {
+    margin-bottom: 50px;
+  }
+
   .goods__image {
     width: 324px;
 
     // Временно, пока не появится нормальная графика
     min-height: 200px;
+  }
+
+  .goods__content {
+    width: 253px;
+  }
+
+  .goods__title {
+    width: 110px;
+    margin: 0 auto 17px;
+    text-align: center;
+  }
+
+  .goods__to-order {
+    width: 250px;
+    margin: 0 auto;
   }
 }
 
