@@ -1,5 +1,5 @@
 .site-list__item {
-  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
 }
 
 .site-list__link {
@@ -22,7 +22,7 @@
   }
 
   .site-list__item {
-    border-top: none;
+    border-bottom: none;
   }
 
   .site-list__link {
@@ -41,12 +41,19 @@
     width: 480px;
   }
 
-  .site-list__item--active {
+  .site-list--index .site-list__item--active {
     border-bottom: 2px solid @white;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid @green;
+  }
+
+  .site-list--index .site-list__link {
+    color: @white;
   }
 
   .site-list__link {
     letter-spacing: 1px;
-    color: @white;
   }
 }
