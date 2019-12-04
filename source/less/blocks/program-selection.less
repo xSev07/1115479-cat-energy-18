@@ -71,7 +71,7 @@
 }
 
 .program-selection input {
-  .set-font-size(16px, 18px);
+  .set-font-size(inherit);
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
@@ -90,6 +90,10 @@
   min-height: 95px;
 }
 
+.program-selection__submit {
+  .set-font-size(16px, 20px);
+}
+
 .program-selection__note {
   .set-font-size(14px, 16px);
   font-family: @font-additional;
@@ -99,6 +103,10 @@
   .program-selection {
     width: 708px;
     padding-bottom: 65px;
+  }
+
+  .program-selection__fieldset {
+    .set-font-size(20px);
   }
 
   .program-selection__fieldset--info-general {
@@ -112,6 +120,7 @@
   .program-selection__title {
     width: 550px;
     margin: 0 40px;
+    .set-font-size(36px);
   }
 
   .program-selection__container {
@@ -148,6 +157,18 @@
 
     min-height: 300px;
   }
+
+  .program-selection textarea {
+    .set-font-size(20px, 30px);
+  }
+
+  .program-selection__submit {
+    .set-font-size(20px);
+  }
+
+  .program-selection__note {
+    .set-font-size(16px);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -159,6 +180,7 @@
   .program-selection__description {
     width: 325px;
     margin: 0 20px 55px;
+    .set-font-size(20px, 30px);
   }
 
   .program-selection__container {

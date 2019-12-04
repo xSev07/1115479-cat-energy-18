@@ -28,7 +28,6 @@
   list-style: none;
 
   .set-outline(blue);
-  // min-height: 515px;
 }
 
 .goods-additional__item {
@@ -49,6 +48,10 @@
   color: @light-black;
 }
 
+.goods-additional__to-order {
+  .set-font-size(16px, 20px);
+}
+
 @media (min-width: @tablet-width) {
   .goods-additional {
     padding-bottom: 78px;
@@ -65,6 +68,7 @@
 
   .goods-additional__header {
     margin-bottom: 65px;
+    .set-font-size(36px);
   }
 
   .goods-additional__list {
@@ -74,6 +78,10 @@
   .goods-additional__item {
 
     min-height: 140px;
+  }
+
+  .goods-additional__title {
+    .set-font-size(20px);
   }
 }
 
