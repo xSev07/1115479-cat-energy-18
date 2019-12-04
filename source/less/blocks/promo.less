@@ -6,10 +6,22 @@
 }
 
 .promo__wrapper {
+  position: relative;
   width: 320px;
-  background: linear-gradient(to bottom, @green 63%, @white 63%);
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  // background: linear-gradient(to bottom, @green 63%, @white 63%);
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 320px;
+    height: 305px;
+
+    background: @green url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  }
 }
 
 .promo__intro {
