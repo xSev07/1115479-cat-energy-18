@@ -1,15 +1,15 @@
 .page-catalog__title {
   width: 320px;
+  padding: 13px 20px 27px;
 
-  min-height: 105px;
   .set-outline(green);
 }
 
 @media (min-width: @tablet-width) {
   .page-catalog__title {
     width: 708px;
-
-    min-height: 145px;
+    padding: 60px 0px 25px;
+    .set-font-size(60px);
   }
 }
 
@@ -17,7 +17,6 @@
 @media (min-width: @desktop-width) {
   .page-catalog__title {
     width: 1220px;
-
-    min-height: 175px;
+    .set-vertical-padding(80px, 60px);
   }
 }
