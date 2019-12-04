@@ -8,8 +8,6 @@
 .promo__wrapper {
   position: relative;
   width: 320px;
-  // background: linear-gradient(to bottom, @green 63%, @white 63%);
-
 
   &::after {
     content: "";
@@ -66,7 +64,12 @@
     position: relative;
     width: 708px;
     padding-left: 88px;
-    background: none;
+
+    &::after {
+      display: none;
+      top: auto;
+      left: auto;
+    }
   }
 
   .promo__intro {
