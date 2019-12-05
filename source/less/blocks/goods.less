@@ -77,10 +77,28 @@
     flex-direction: column;
     // align-items: center;
     background: linear-gradient(transparent 85px, @light-grey 85px);
-    border: none;
 
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      border: none;
+    }
+
+    &:last-child {
+      background: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1px;
+      width: calc(100% + 2px);
+      height: 86px;
+      border: 1px solid @white;
+      border-bottom: 1px solid @border-darker-grey;
     }
   }
 
