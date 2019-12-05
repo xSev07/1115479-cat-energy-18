@@ -80,8 +80,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
-    right: 4px;
+    top: 6px;
+    right: 3px;
     width: 24px;
     height: 11px;
     background: url("../../img/icon-right-arrow-long.svg") no-repeat;
@@ -106,10 +106,10 @@
       margin-bottom: 30px;
     }
 
-    padding: 77px 270px 61px 53px;
+    padding: 77px 275px 59px 53px;
 
     &--pro {
-      padding-right: 306px;
+      padding-right: 315px;
     }
 
     &::before {
@@ -144,7 +144,7 @@
   }
 
   .programs__description {
-    margin-bottom: 58px;
+    margin-bottom: 57px;
     padding: 0;
     .set-font-size(16px, 24px);
     border-bottom: none;
@@ -154,6 +154,10 @@
     margin-left: 0;
     padding-right: 50px;
     .set-font-size(20px);
+
+    &::after {
+      top: 9px;
+    }
   }
 }
 
@@ -161,7 +165,7 @@
 @media (min-width: @desktop-width) {
   .programs {
     width: 1220px;
-    padding-bottom: 75px;
+    padding-bottom: 72px;
   }
 
   .programs__list {
@@ -205,13 +209,10 @@
 
   .programs__title {
     margin-left: 162px;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
   }
 
   .programs__description {
-    margin-bottom: 36px;
-    // width: 450px;
-    //
-    // min-height: 70px;
+    margin-bottom: 32px;
   }
 }

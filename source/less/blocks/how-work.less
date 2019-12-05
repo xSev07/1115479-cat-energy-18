@@ -17,8 +17,9 @@
 
 .how-work__item {
   position: relative;
-  margin-bottom: 20px;
-  .set-vertical-padding(6px);
+  margin-bottom: 19px;
+  .set-vertical-padding(1px, 6px);
+  font-family: @font-additional;
   padding-left: 80px;
 
   &:last-child {
@@ -80,15 +81,13 @@
   }
 
   .how-work__item {
-    width: 240px;
+    width: 245px;
     min-height: 270px;
     margin-bottom: 47px;
-    padding-top: 150px;
-    padding-right: 26px;
-    padding-left: 0;
+    padding: 150px 0 0;
 
     &:nth-child(2n+1) {
-      margin-right: 145px;
+      margin-right: 138px;
     }
 
     &:nth-last-child(-n+2) {
@@ -106,9 +105,10 @@
       content: counter(advantage);
       position: absolute;
       top: 0;
-      left: 114px;
+      left: 117px;
       z-index: -1;
       .set-font-size(280px);
+      font-family: @font-main;
       color: @light-grey;
     }
   }
