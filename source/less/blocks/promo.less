@@ -49,7 +49,7 @@
 .promo__selection-program {
   display: block;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   .set-vertical-padding(11px);
   .set-font-size(14px, 18px);
@@ -102,9 +102,14 @@
     width: 708px;
   }
 
+  .promo__button-wrapper {
+    position: relative;
+  }
+
   .promo__selection-program {
     position: absolute;
-    bottom: 536px;
+    top: -589px;
+    left: 0px;
     width: 245px;
     .set-vertical-padding(15px);
     .set-font-size(20px);
