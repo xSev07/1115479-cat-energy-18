@@ -1,34 +1,56 @@
 .copyright {
-  width: 320px;
-  padding: 20px;
+  position: relative;
 
-  .set-outline(blue);
-  min-height: 75px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 13px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/htmlacademy.svg") no-repeat;
+  }
 }
 
 .copyright__link {
-  padding-right: 30px;
-  .set-font-size(16px);
-  color: @grey;
-
   display: block;
-  .set-outline(yellow);
-  min-height: 35px;
+  padding: 30px;
+  padding-left: 20px;
+  .set-font-size(16px);
+  font-family: @font-additional;
+  color: @grey;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 162px;
+    width: 175px;
+    margin-right: 20px;
 
-    min-height: 64px;
+    &::after {
+      top: 9px;
+      right: 3px;
+    }
   }
 
   .copyright__link {
-
-    min-height: 16px;
+    padding: 20px 45px 20px 2px;
   }
 }
 
-//@media (min-width: @desktop-width) {
-//
-//}
+@media (min-width: @desktop-width) {
+  .copyright {
+    padding: 10px 35px 10px 0;
+    margin-right: 0;
+
+    &::after {
+      top: 0;
+      right: -7px;
+    }
+  }
+
+  .copyright__link {
+    display: inline;
+    padding: 0;
+  }
+}

@@ -1,9 +1,5 @@
 .example {
   background-color: @light-grey;
-
-  //min-height: 705px;
-  //.set-outline(magenta);
-  background-color: transparent;
 }
 
 .example__wrapper {
@@ -93,8 +89,13 @@
   }
 
   .example__header {
+    .set-font-size(60px);
 
     min-height: 160px;
+  }
+
+  .example__description {
+    .set-font-size(16px, 24px);
   }
 
   .example__container-stats {
@@ -108,17 +109,34 @@
     width: 370px;
   }
 
+  .example__value {
+    .set-font-size(30px, 37px);
+  }
+
+  .example__field {
+    .set-font-size(14px);
+  }
+
   .example__total-cost {
     width: 175px;
+    .set-font-size(20px);
   }
 
   .example__slider-wrapper {
 
     min-height: 633px;
   }
+
+  .slider__label {
+    .set-font-size(20px);
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .example {
+    padding-bottom: 10px;
+  }
+
   .example__wrapper {
     display: flex;
     width: 1220px;

@@ -1,9 +1,38 @@
 .stats {
-  .set-font-size(12px, 16px);
+  width: 100%;
+  .set-font-size(12px, 15px);
   font-family: @font-additional;
   color: @grey;
+  border-collapse: collapse;
+}
+
+.stats__value {
+  text-align: right;
 }
 
 .stats--additional {
   .set-font-size(14px);
 }
+
+@media (min-width: @tablet-width) {
+  .stats {
+    .set-font-size(16px, 16px);
+  }
+
+  .stats--additional {
+    .set-font-size(16px, 20px);
+  }
+
+  .stats td {
+    .set-vertical-padding(7px);
+  }
+
+  .stats tr {
+    border-bottom: 1px solid @border-grey;
+  }
+}
+
+
+// @media (min-width: @desktop-width) {
+//
+// }
