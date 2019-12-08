@@ -1,7 +1,9 @@
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
   background-color: @light-grey;
+}
+
+.page-footer__wrapper {
+  width: 320px;
 }
 
 .page-footer__menu {
@@ -24,7 +26,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     width: 768px;
     padding-bottom: 50px;
   }
@@ -55,8 +57,8 @@
 
 
 @media (min-width: @desktop-width) {
-  .page-footer {
-    width: auto;
+  .page-footer__wrapper {
+    width: 1220px;
     padding-bottom: 55px;
   }
 
