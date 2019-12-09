@@ -1,6 +1,9 @@
 .contacts {
+  .set-font-size(0);
+}
 
-  min-height: 477px;
+.contacts__wrapper {
+  width: 320px;
 }
 
 .contacts__container {
@@ -8,13 +11,11 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 20px;
-  .set-vertical-padding(30px, 25px);
-
-  .set-outline(blue);
-  min-height: 115px;
+  .set-vertical-padding(28px, 26px);
 }
 
 .contacts__call {
+  width: 120px;
   .set-font-size(16px, 20px);
   .set-font-weight();
   color: @black;
@@ -22,30 +23,32 @@
 }
 
 .contacts__address {
+  width: 140px;
   margin: 0;
   .set-font-size(14px, 20px);
   font-family: @font-additional;
 }
 
-.contacts__map {
-  background-color: #fdf7f0;
+.contacts__empty-line {
+  display: none;
+}
 
-  min-height: 360px;
-  .set-outline(green);
+.contacts__map {
+  width: 100%;
+  background-color: #fdf7f0;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    margin-bottom: 35px;
-
-    min-height: 600px;
+  .contacts__wrapper {
+    width: 768px;
+    padding-bottom: 50px;
   }
 
   .contacts__container {
-    width: 630px;
+    width: 626px;
     margin: 0 70px;
-
-    min-height: 200px;
+    .set-vertical-padding(64px, 6px);
   }
 
   .contacts__call {
@@ -53,35 +56,40 @@
   }
 
   .contacts__address {
+    width: 160px;
     .set-font-size(16px, 20px);
+    text-align: right;
+  }
+
+  .contacts__empty-line {
+    display: inline;
   }
 
   .contacts__map {
-
-    min-height: 400px;
+    height: 400px;
   }
 }
 
 
 @media (min-width: @desktop-width) {
-  .contacts {
+  .contacts__wrapper {
     position: relative;
-    justify-content: center;
-    margin-bottom: 55px;
-
-    min-height: 385px;
+    padding-bottom: 0;
   }
 
   .contacts__container {
     position: absolute;
-    top: 85px;
-    left: 110px;
-    width: 550px;
-
-    min-height: 195px;
+    top: 97px;
+    left: -226px;
+    width: 570px;
+    margin: 0;
+    padding: 65px 76px 55px;
+    background-color: @white;
+    min-height: 200px;
   }
 
-  .contacts__call {
-    margin: 0 80px;
+  .contacts__address {
+    width: 168px;
+    text-align: left;
   }
 }
