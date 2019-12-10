@@ -1,39 +1,45 @@
+@weight: 3px;
+
 .goods-additional {
   padding-bottom: 36px;
 }
 
+.goods-additional__header-wrapper {
+  display: flex;
+  width: 320px;
+  margin: 0 auto 34px;
+  @start: 14px;
+  background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+}
+
+.goods-additional__header {
+  margin: 0;
+  margin-right: 20px;
+  padding-right: 23px;
+  padding-left: 20px;
+  .set-font-size(24px);
+  .set-font-weight();
+  color: @black;
+  background-color: @white;
+}
+
 .goods-additional__container-content {
   width: 320px;
-
-  .set-outline(grey);
 }
 
 .goods-additional__container-additional {
   padding-bottom: 40px;
 }
 
-.goods-additional__header {
-  margin: 0;
-  .set-font-size(24px);
-  .set-font-weight();
-  color: @black;
-
-  min-height: 60px;
-  .set-outline(yellow);
-}
-
 .goods-additional__list {
   margin: 0;
   padding: 0 20px;
   list-style: none;
-
-  .set-outline(blue);
 }
 
 .goods-additional__item {
 
   .set-outline(green);
-  min-height: 129px;
 }
 
 .goods-additional__title {
@@ -57,6 +63,21 @@
     padding-bottom: 78px;
   }
 
+  .goods-additional__header-wrapper {
+    width: @tablet-width;
+    margin-bottom: 80px;
+    @start: 22px;
+    background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+  }
+
+  .goods-additional__header {
+    margin-left: 28px;
+    margin-right: 20px;
+    padding-right: 36px;
+    padding-left: 39px;
+    .set-font-size(36px);
+  }
+
   .goods-additional__container-content {
     width: 708px;
     padding: 0;
@@ -64,11 +85,6 @@
 
   .goods-additional__container-additional {
     padding-bottom: 67px;
-  }
-
-  .goods-additional__header {
-    margin-bottom: 65px;
-    .set-font-size(36px);
   }
 
   .goods-additional__list {
@@ -92,6 +108,17 @@
     padding-bottom: 85px;
   }
 
+  .goods-additional__header-wrapper {
+    width: @desktop-width;
+    margin-bottom: 80px;
+    @start: 22px;
+    background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+  }
+
+  .goods-additional__header {
+    margin-left: 25px;
+  }
+
   .goods-additional__container-content {
     display: flex;
     justify-content: space-between;
@@ -101,11 +128,6 @@
   .goods-additional__container-additional {
     width: 865px;
     padding: 0;
-  }
-
-  .goods-additional__header {
-    width: 100%;
-    margin-bottom: 55px;
   }
 
   .goods-additional__item {
