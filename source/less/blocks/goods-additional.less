@@ -28,7 +28,7 @@
 }
 
 .goods-additional__container-additional {
-  padding-bottom: 40px;
+  padding-bottom: 23px;
 }
 
 .goods-additional__list {
@@ -38,12 +38,18 @@
 }
 
 .goods-additional__item {
-
-  .set-outline(green);
+  display: flex;
+  flex-direction: column;
+  .set-vertical-padding(12px, 18px);
+  border-bottom: 1px solid @border-lighter-grey;
+  &:first-child {
+    border-top: 1px solid @border-lighter-grey;
+  }
 }
 
 .goods-additional__title {
   margin: 0;
+  margin-bottom: 11px;
 }
 
 .goods-additional__link {
@@ -54,7 +60,13 @@
   color: @light-black;
 }
 
+.goods-additional__stats {
+  margin-bottom: 15px;
+}
+
 .goods-additional__to-order {
+  width: auto;
+  padding: 9px;
   .set-font-size(16px, 20px);
 }
 
