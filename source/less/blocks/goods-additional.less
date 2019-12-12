@@ -50,13 +50,14 @@
 .goods-additional__title {
   margin: 0;
   margin-bottom: 11px;
+  margin-left: 1px;
+  .set-font-size(16px);
+  .set-font-weight();
+  text-transform: uppercase;
 }
 
 .goods-additional__link {
-  .set-font-size(16px);
-  .set-font-weight();
   text-decoration: none;
-  text-transform: uppercase;
   color: @light-black;
 }
 
@@ -104,12 +105,23 @@
   }
 
   .goods-additional__item {
-
-    min-height: 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 35px;
+    border: 1px solid @border-lighter-grey;
+    &:not(:first-child) {
+      border-top: none;
+    }
   }
 
   .goods-additional__title {
+    margin-left: 3px;
     .set-font-size(20px);
+  }
+
+  .goods-additional__to-order {
+    width: 100%;
   }
 }
 
