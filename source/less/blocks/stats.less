@@ -9,6 +9,10 @@
   text-align: right;
 }
 
+.stats--catalog {
+  width: 100%;
+}
+
 .stats--additional {
   .set-font-size(14px);
 }
@@ -22,7 +26,7 @@
     .set-font-size(16px, 20px);
   }
 
-  .stats td {
+  .stats--catalog td {
     .set-vertical-padding(7px);
   }
 
@@ -30,13 +34,17 @@
     .set-vertical-padding(4px);
   }
 
-  .stats tr {
-    // border-bottom: 1px solid @border-grey;
+  .stats--catalog tr {
+    border-bottom: 1px solid @border-grey;
   }
 
-  .stats__value {
+  .stats--additional .stats__value {
     width: 94px;
     padding-left: 10px;
+  }
+
+  .goods-additional__to-order {
+    margin-top: 4px;
   }
 }
 
