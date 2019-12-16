@@ -4,13 +4,10 @@
 }
 
 .program-selection__description {
-  width: 280px;
-  margin: 0 20px 35px;
+  width: 270px;
+  margin: 0 20px 39px;
   text-transform: uppercase;
   color: @black;
-
-  .set-outline(yellow);
-  min-height: 35px;
 }
 
 .program-selection__fieldset {
@@ -19,44 +16,53 @@
   color: @light-black;
   text-transform: uppercase;
   border: none;
+}
 
-  .set-outline(blue);
+.program-selection__fieldset label {
+  // display: block;
 }
 
 .program-selection__fieldset--info-general {
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .program-selection__fieldset--info-contacts {
   margin-bottom: 30px;
-
-  min-height: 180px;
 }
 
 .program-selection__fieldset--info-comment {
   margin-bottom: 25px;
-
-  min-height: 215px;
 }
 
 .program-selection__fieldset--info-additional {
   margin-bottom: 25px;
-
-  min-height: 220px;
 }
 
 .program-selection__container--info-general {
 
-  .set-outline(green);
-  min-height: 120px;
 }
 
 .program-selection__general-info {
   width: 280px;
   margin: 0 20px;
+}
 
-  .set-outline(green);
-  min-height: 190px;
+.program-selection__general-info label {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-selection__general-info input {
+  flex-grow: 1;
+  margin-left: 15px;
+  padding-left: 15px;
 }
 
 .program-selection__title {
@@ -66,11 +72,10 @@
   color: @black;
   text-transform: none;
 
-  .set-outline(yellow);
-  min-height: 60px;
 }
 
 .program-selection input {
+  .set-vertical-padding(11px, 12px);
   .set-font-size(inherit);
   font-family: @font-main;
   color: @grey;
@@ -86,8 +91,6 @@
 
 .program-selection__container--submit {
 
-  .set-outline(blue);
-  min-height: 95px;
 }
 
 .program-selection__submit {
@@ -133,17 +136,22 @@
   }
 
   .program-selection__description {
-    width: 628px;
-    margin: 0 40px 60px;
-
-    min-height: 55px;
+    width: 380px;
+    margin: 0 40px 65px;
+    .set-font-size(20px, 30px);
   }
 
   .program-selection__general-info {
-    width: 628px;
+    width: 630px;
     margin: 0 40px 65px;
+  }
 
-    min-height: 210px;
+  .program-selection__general-info label {
+    margin-bottom: 20px;
+  }
+
+  .program-selection__general-info input {
+    margin-left: 20px;
   }
 
   .program-selection__fieldset--info-contacts {
@@ -156,6 +164,10 @@
     margin-bottom: 50px;
 
     min-height: 300px;
+  }
+
+  .program-selection input {
+    .set-vertical-padding(8px, 10px);
   }
 
   .program-selection textarea {
@@ -179,7 +191,8 @@
 
   .program-selection__description {
     width: 325px;
-    margin: 0 20px 55px;
+    margin: 0;
+    margin-bottom: 65px;
     .set-font-size(20px, 30px);
   }
 
