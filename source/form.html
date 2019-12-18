@@ -41,34 +41,31 @@
             <legend class="visually-hidden">Основные данные</legend>
             <div class="program-selection__container program-selection__container--info-general">
               <div class="program-selection__general-info">
-                <label for="name">
-                  Имя:*<input type="text" id="name" name="name" placeholder="Барсик" required>
-                </label>
-                <label for="weight">
-                  Вес (кг):*<input type="text" id="weight" name="weight" placeholder="7" required>
-                </label>
-                <label for="age">
-                  Возраст (лет):<input type="text" id="age" name="age" placeholder="7">
-                </label>
+                <p class="program-selection__input-container">
+                  <label for="name">Имя:*</label>
+                  <input type="text" id="name" name="name" placeholder="Барсик" required>
+                </p>
+                <p class="program-selection__input-container">
+                  <label for="weight">Вес (кг):*</label>
+                  <input type="text" id="weight" name="weight" placeholder="7" required>
+                </p>
+                <p class="program-selection__input-container">
+                  <label for="age">Возраст (лет):</label>
+                  <input type="text" id="age" name="age" placeholder="7">
+                </p>
               </div>
               <ul class="program-selection__program program-list">
                 <li class="program-list__option">
-                  <label>
-                    <input class="program-list__input" type="radio" name="program" value="slim" checked>
-                    Похудение
-                  </label>
+                  <input class="program-list__input" id="program-slim" type="radio" name="program" value="slim" checked>
+                  <label for="program-slim">Похудение</label>
                 </li>
                 <li class="program-list__option">
-                  <label>
-                    <input class="program-list__input" type="radio" name="program" value="pro">
-                    Набор массы
-                  </label>
+                  <input class="program-list__input" id="program-pro" type="radio" name="program" value="pro">
+                  <label for="program-pro">Набор массы</label>
                 </li>
                 <li class="program-list__option">
-                  <label>
-                    <input class="program-list__input" type="radio" name="program" value="advice">
-                    Не знаю (Нужен ваш совет)
-                  </label>
+                  <input class="program-list__input" id="program-advice" type="radio" name="program" value="advice">
+                  <label for="program-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </div>
