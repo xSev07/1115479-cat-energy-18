@@ -35,7 +35,11 @@
 }
 
 .program-selection__fieldset--info-contacts {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+}
+
+.program-selection__fieldset--info-contacts .program-selection__container {
+  .set-horizontal-margin(20px);
 }
 
 .program-selection__fieldset--info-comment {
@@ -57,14 +61,14 @@
 }
 
 .program-selection__general-info input {
-  flex-grow: 1;
-  margin-left: 15px;
-  padding-left: 15px;
+  // flex-grow: 1;
+  // margin-left: 15px;
+  // padding-left: 15px;
 }
 
 .program-selection__title {
   width: 200px;
-  margin: 0 19px;
+  margin: 0 19px 34px;
   padding: 0;
   .set-font-size(24px);
   color: @black;
@@ -78,6 +82,9 @@
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
+  flex-grow: 1;
+  margin-left: 13px;
+  padding-left: 15px;
 }
 
 .program-selection textarea {
@@ -120,7 +127,7 @@
 
   .program-selection__title {
     width: 550px;
-    margin: 0 40px;
+    margin: 0 40px 76px;
     .set-font-size(36px);
   }
 
@@ -145,6 +152,17 @@
 
   .program-selection__fieldset--info-contacts {
     margin-bottom: 65px;
+  }
+
+  .program-selection__fieldset--info-contacts .program-selection__container {
+    margin-right: 35px;
+    margin-left: 40px;
+  }
+
+  .program-selection__fieldset--info-contacts input {
+    margin-left: 17px;
+    padding-right: 50px;
+    padding-left: 19px;
   }
 
   .program-selection__fieldset--info-comment {
