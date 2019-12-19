@@ -78,6 +78,22 @@
     margin-bottom: 13px;
     padding-left: 67px;
   }
+
+  .program-list__option label {
+    &::before {
+      top: 1px;
+      left: 8px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .program-list__option input:checked + label::after {
+    top: 12px;
+    left: 19px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (min-width: @desktop-width) {
