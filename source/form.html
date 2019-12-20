@@ -39,19 +39,19 @@
         <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="program-selection__fieldset program-selection__fieldset--info-general">
             <legend class="visually-hidden">Основные данные</legend>
-            <div class="program-selection__container program-selection__container--info-general">
+            <div class="program-selection__container">
               <div class="program-selection__general-info">
                 <p class="program-selection__input-container">
                   <label for="name">Имя:*</label>
-                  <input type="text" id="name" name="name" placeholder="Барсик" required>
+                  <input class="program-selection__input" type="text" id="name" name="name" placeholder="Барсик" required>
                 </p>
                 <p class="program-selection__input-container">
                   <label for="weight">Вес (кг):*</label>
-                  <input type="text" id="weight" name="weight" placeholder="7" required>
+                  <input class="program-selection__input" type="text" id="weight" name="weight" placeholder="7" required>
                 </p>
                 <p class="program-selection__input-container">
                   <label for="age">Возраст (лет):</label>
-                  <input type="text" id="age" name="age" placeholder="7">
+                  <input class="program-selection__input" type="text" id="age" name="age" placeholder="7">
                 </p>
               </div>
               <ul class="program-selection__program program-list">
@@ -75,11 +75,11 @@
             <div class="program-selection__container">
               <p class="program-selection__input-container">
                 <label for="email">E-mail:*</label>
-                <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="program-selection__input program-selection__input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </p>
               <p class="program-selection__input-container">
                 <label for="phone">Телефон:*</label>
-                <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="program-selection__input program-selection__input--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </p>
             </div>
           </fieldset>
