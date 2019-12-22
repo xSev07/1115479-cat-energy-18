@@ -13,9 +13,27 @@
 
 .button--green {
   background-color: @green;
+
+  &:hover,
+  &:focus {
+    background-color: @darker-green;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
 }
 
 .button--grey {
   background-color: @light-grey;
   color: @grey;
+
+  &:hover,
+  &:focus {
+    background-color: @border-darkest-grey;
+  }
+
+  &:active {
+    color: fade(@grey, 30%);
+  }
 }

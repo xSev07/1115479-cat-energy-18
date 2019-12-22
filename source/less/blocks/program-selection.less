@@ -52,7 +52,6 @@
 
 .program-selection__general-info {
   width: 280px;
-  margin: 0 20px;
   margin: 0 20px 23px;
 }
 
@@ -75,6 +74,19 @@
   margin-left: 13px;
   padding-left: 15px;
   border: 2px solid @border-grey;
+
+  &:hover {
+    border-color: @border-lighter-grey;
+  }
+
+  &:active,
+  &:focus {
+    border-color: @grey;
+  }
+}
+
+.program-selection__input--error {
+  border-color: @light-coral;
 }
 
 .program-selection__input--email {
