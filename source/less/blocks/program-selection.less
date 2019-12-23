@@ -20,6 +20,7 @@
 }
 
 .program-selection__input-container {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 0;
@@ -65,7 +66,7 @@
 }
 
 .program-selection__input {
-  .set-vertical-padding(11px, 12px);
+  .set-vertical-padding(13px, 12px);
   .set-font-size(inherit);
   font-family: @font-main;
   color: @grey;
@@ -73,7 +74,7 @@
   flex-grow: 1;
   margin-left: 13px;
   padding-left: 15px;
-  border: 2px solid @border-grey;
+  border: 1px solid @border-grey;
 
   &:hover {
     border-color: @border-lighter-grey;
@@ -89,16 +90,28 @@
   border-color: @light-coral;
 }
 
+.program-selection__input--error + svg {
+  fill: @light-coral;
+}
+
 .program-selection__input--email {
   padding-right: 40px;
-  background: url(../img/icon-mail.svg) no-repeat 182px 14px;
-  background-size: 17px;
+}
+
+.program-selection__icon-mail {
+  position: absolute;
+  top: 14px;
+  right: 16px;
 }
 
 .program-selection__input--phone {
   padding-right: 40px;
-  background: url(../img/icon-phone.svg) no-repeat 165px 11px;
-  background-size: 20px;
+}
+
+.program-selection__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 13px;
 }
 
 .program-selection textarea {
@@ -173,10 +186,8 @@
     margin-left: 40px;
   }
 
-  .program-selection__fieldset--info-contacts .program-selection__input {
-    margin-left: 17px;
-    padding-right: 50px;
-    padding-left: 19px;
+  .program-selection__fieldset--info-contacts label {
+    margin-right: 4px;
   }
 
   .program-selection__fieldset--info-comment {
@@ -184,7 +195,17 @@
   }
 
   .program-selection__input {
-    .set-vertical-padding(8px, 10px);
+    .set-vertical-padding(10px);
+  }
+
+  .program-selection__icon-mail {
+    top: 18px;
+    right: 21px;
+  }
+
+  .program-selection__icon-phone {
+    top: 17px;
+    right: 18px;
   }
 
   .program-selection textarea {
@@ -222,7 +243,7 @@
   .program-selection__title {
     width: 530px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 76px;
   }
 
   .program-selection__general-info {
@@ -236,6 +257,21 @@
 
   .program-selection__fieldset--info-contacts {
     margin-bottom: 40px;
+  }
+
+  .program-selection__fieldset--info-contacts .program-selection__input-container {
+    width: 570px;
+    margin: 0;
+  }
+
+  .program-selection__fieldset--info-contacts .program-selection__container {
+    margin: 0;
+  }
+
+  .program-selection__fieldset--info-contacts .program-selection__input {
+    margin-left: 17px;
+    padding-right: 50px;
+    padding-left: 19px;
   }
 
   .program-selection__fieldset--info-comment {
