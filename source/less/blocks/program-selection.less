@@ -95,6 +95,7 @@
 }
 
 .program-selection__input--email {
+  margin-left: 10px;
   padding-right: 40px;
 }
 
@@ -105,6 +106,7 @@
 }
 
 .program-selection__input--phone {
+  margin-left: 10px;
   padding-right: 40px;
 }
 
@@ -114,7 +116,11 @@
   right: 13px;
 }
 
-.program-selection textarea {
+.program-selection__comment {
+  width: 280px;
+  height: 151px;
+  margin: 0 20px;
+  padding: 13px;
   .set-font-size(16px, 18px);
   font-family: @font-main;
   color: @grey;
@@ -198,9 +204,20 @@
     .set-vertical-padding(10px);
   }
 
+  .program-selection__input--email {
+    margin-left: 17px;
+    padding-left: 19px;
+  }
+
   .program-selection__icon-mail {
     top: 18px;
     right: 21px;
+  }
+
+  .program-selection__input--phone {
+    margin-left: 10px;
+    padding-right: 45px;
+    padding-left: 19px;
   }
 
   .program-selection__icon-phone {
@@ -208,7 +225,11 @@
     right: 18px;
   }
 
-  .program-selection textarea {
+  .program-selection__comment {
+    width: 631px;
+    height: 174px;
+    margin: 0 40px;
+    padding: 10px 18px;
     .set-font-size(20px, 30px);
   }
 
@@ -256,7 +277,7 @@
   }
 
   .program-selection__fieldset--info-contacts {
-    margin-bottom: 40px;
+    margin-bottom: 67px;
   }
 
   .program-selection__fieldset--info-contacts .program-selection__input-container {
@@ -268,14 +289,13 @@
     margin: 0;
   }
 
-  .program-selection__fieldset--info-contacts .program-selection__input {
-    margin-left: 17px;
-    padding-right: 50px;
-    padding-left: 19px;
-  }
-
   .program-selection__fieldset--info-comment {
     margin-bottom: 50px;
+  }
+
+  .program-selection__comment {
+    width: 1220px;
+    margin: 0;
   }
 
   .program-selection__fieldset--info-additional {
