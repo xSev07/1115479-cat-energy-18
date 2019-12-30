@@ -35,6 +35,14 @@
   margin-bottom: 28px;
 }
 
+.program-selection__fieldset--info-general .program-list {
+  padding: 16px 20px;
+}
+
+.program-selection__fieldset--info-general .program-selection__program {
+  border: 1px solid @border-grey;
+}
+
 .program-selection__fieldset--info-contacts {
   margin-bottom: 28px;
 }
@@ -48,7 +56,15 @@
 }
 
 .program-selection__fieldset--info-additional {
-  margin-bottom: 25px;
+  margin-bottom: 33px;
+}
+
+.program-selection__fieldset--info-additional .program-selection__title {
+  margin-bottom: 33px;
+}
+
+.program-selection__fieldset--info-additional .program-list {
+  margin: 0 20px;
 }
 
 .program-selection__general-info {
@@ -154,8 +170,22 @@
     margin-bottom: 10px;
   }
 
+  .program-selection__fieldset--info-general .program-list {
+    .set-vertical-padding(23px, 25px);
+  }
+
   .program-selection__fieldset--info-additional {
     margin-bottom: 35px;
+  }
+
+  .program-selection__fieldset--info-additional .program-selection__title {
+    margin-bottom: 52px;
+  }
+
+  .program-selection__fieldset--info-additional .program-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 40px;
   }
 
   .program-selection__title {
@@ -197,7 +227,7 @@
   }
 
   .program-selection__fieldset--info-comment {
-    margin-bottom: 50px;
+    margin-bottom: 64px;
   }
 
   .program-selection__input {
@@ -290,7 +320,7 @@
   }
 
   .program-selection__fieldset--info-comment {
-    margin-bottom: 50px;
+    margin-bottom: 66px;
   }
 
   .program-selection__comment {
