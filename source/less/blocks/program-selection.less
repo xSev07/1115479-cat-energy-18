@@ -35,14 +35,6 @@
   margin-bottom: 28px;
 }
 
-.program-selection__fieldset--info-general .program-list {
-  padding: 16px 20px;
-}
-
-.program-selection__fieldset--info-general .program-selection__program {
-  border: 1px solid @border-grey;
-}
-
 .program-selection__fieldset--info-contacts {
   margin-bottom: 28px;
 }
@@ -59,12 +51,12 @@
   margin-bottom: 33px;
 }
 
-.program-selection__fieldset--info-additional .program-selection__title {
-  margin-bottom: 33px;
-}
-
 .program-selection__fieldset--info-additional .program-list {
   margin: 0 20px;
+}
+
+.program-selection__fieldset--info-additional .program-selection__title {
+  margin-bottom: 33px;
 }
 
 .program-selection__general-info {
@@ -141,6 +133,7 @@
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
+  resize: none;
 }
 
 .program-selection__container--submit {
@@ -171,11 +164,11 @@
   }
 
   .program-selection__fieldset--info-general .program-list {
-    .set-vertical-padding(23px, 25px);
+    margin: 0 40px 65px;
   }
 
   .program-selection__fieldset--info-additional {
-    margin-bottom: 35px;
+    margin-bottom: 49px;
   }
 
   .program-selection__fieldset--info-additional .program-selection__title {
@@ -183,8 +176,6 @@
   }
 
   .program-selection__fieldset--info-additional .program-list {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0 40px;
   }
 
@@ -306,6 +297,10 @@
     margin-bottom: 69px;
   }
 
+  .program-selection__fieldset--info-general .program-list {
+    margin: 0;
+  }
+
   .program-selection__fieldset--info-contacts {
     margin-bottom: 67px;
   }
@@ -329,6 +324,10 @@
   }
 
   .program-selection__fieldset--info-additional {
-    margin-bottom: 45px;
+    margin-bottom: 59px;
+  }
+
+  .program-selection__fieldset--info-additional .program-list {
+    margin: 0;
   }
 }
