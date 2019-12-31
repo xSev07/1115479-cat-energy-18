@@ -71,7 +71,9 @@
             </div>
           </fieldset>
           <fieldset class="program-selection__fieldset program-selection__fieldset--info-contacts">
-            <legend class="program-selection__title">Контактные данные (владельца кота)</legend>
+            <div class="program-selection__title-wrapper">
+              <legend class="program-selection__title">Контактные данные (владельца кота)</legend>
+            </div>
             <div class="program-selection__container">
               <p class="program-selection__input-container">
                 <label for="email">E-mail:*</label>
@@ -91,32 +93,36 @@
             </div>
           </fieldset>
           <fieldset class="program-selection__fieldset program-selection__fieldset--info-comment">
-            <legend class="program-selection__title">Комментарий</legend>
+            <div class="program-selection__title-wrapper">
+              <legend class="program-selection__title">Комментарий</legend>
+            </div>
             <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
             <textarea class="program-selection__comment" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="program-selection__fieldset program-selection__fieldset--info-additional">
-            <legend class="program-selection__title">Дополнительно</legend>
+            <div class="program-selection__title-wrapper">
+              <legend class="program-selection__title">Дополнительно</legend>
+            </div>
             <ul class="program-selection__additional program-list program-list--additional">
               <li class="program-list__option program-list__option--checkbox">
-                <label for="additionally-sweetener">Сахарозаменитель</label>
                 <input class="program-list__input" id="additionally-sweetener" type="checkbox" name="additionally" value="sweetener" checked>
+                <label for="additionally-sweetener">Сахарозаменитель</label>
               </li>
               <li class="program-list__option program-list__option--checkbox">
-                <label for="additionally-water">Питьевая вода</label>
                 <input class="program-list__input" id="additionally-water" type="checkbox" name="additionally" value="water">
+                <label for="additionally-water">Питьевая вода</label>
               </li>
               <li class="program-list__option program-list__option--checkbox">
-                <label for="additionally-milk">Молоко</label>
                 <input class="program-list__input" id="additionally-milk" type="checkbox" name="additionally" value="milk">
+                <label for="additionally-milk">Молоко</label>
               </li>
               <li class="program-list__option program-list__option--checkbox">
-                <label for="additionally-vitamins">Витамины</label>
                 <input class="program-list__input" id="additionally-vitamins" type="checkbox" name="additionally" value="vitamins">
+                <label for="additionally-vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-          <div class="program-selection__container program-selection__container--submit">
+          <div class="program-selection__container-submit">
             <button class="program-selection__submit button button--green" type="submit">Отправить заявку</button>
             <p class="program-selection__note">* — Обязательные поля</p>
           </div>
