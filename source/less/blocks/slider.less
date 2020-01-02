@@ -21,15 +21,31 @@
 }
 
 .slider__range {
+  position: relative;
   appearance: none;
   width: 84px;
-  height: 10px;
+  height: 8px;
 
   border-style: solid;
   border-width: 1px;
   border-color: rgb(205, 205, 205);
   border-radius: 6px;
-  background-color: rgb(104, 183, 56);
+  //background-color: rgb(104, 183, 56);
+
+  //&::before {
+  //  content: "";
+  //  border-style: solid;
+  //  border-width: 1px;
+  //  border-color: rgb(205, 205, 205);
+  //  border-radius: 6px;
+  //  background-color: rgb(104, 183, 56);
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //  width: 88px;
+  //  height: 18px;
+  //  //z-index: 34;
+  //}
 }
 
 @media (min-width: @tablet-width) {

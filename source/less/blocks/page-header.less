@@ -16,10 +16,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: 710px;
-    min-height: 80px;
+    padding-top: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .page-header__logo-link {
@@ -32,13 +32,29 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    position: relative;
     width: 1220px;
-    min-height: 108px;
-    justify-content: space-between;
+    padding-top: 55px;
+  }
+
+  .page-header--bg-green::after {
+    content: "";
+    position: absolute;
+    top: -108px;
+    left: 610px;
+    z-index: -2;
+    display: block;
+    width: 49.5vw;
+    height: 696px;
+    background: @green;
   }
 
   .page-header__logo-link {
     width: 200px;
     height: 55px;
+  }
+
+  .page-header__nav {
+    margin-left: auto;
   }
 }

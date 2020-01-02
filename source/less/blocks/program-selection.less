@@ -1,6 +1,6 @@
 .program-selection {
   width: 320px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
 }
 
 .program-selection__description {
@@ -28,9 +28,6 @@
 }
 
 .program-selection__title {
-  //width: 200px;
-  //margin: 0 19px 34px;
-  //padding: 0;
   margin: 0;
   margin-right: 105px;
   padding-right: 23px;
@@ -53,8 +50,12 @@
   }
 }
 
+.program-selection__input-container label {
+  flex-shrink: 0;
+}
+
 .program-selection__fieldset--info-general {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .program-selection__fieldset--info-contacts {
@@ -62,11 +63,12 @@
 }
 
 .program-selection__fieldset--info-contacts .program-selection__container {
-  .set-horizontal-margin(20px);
+  margin-right: 36px;
+  margin-left: 20px;
 }
 
 .program-selection__fieldset--info-comment {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .program-selection__fieldset--info-additional {
@@ -87,14 +89,15 @@
 }
 
 .program-selection__input {
+  flex-grow: 1;
+  width: 0;
+  margin-left: 13px;
   .set-vertical-padding(13px, 12px);
+  padding-left: 15px;
   .set-font-size(inherit);
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
-  flex-grow: 1;
-  margin-left: 13px;
-  padding-left: 15px;
   border: 1px solid @border-grey;
 
   &:hover {
@@ -105,6 +108,11 @@
   &:focus {
     border-color: @grey;
   }
+}
+
+.program-selection__input:active + svg,
+.program-selection__input:focus + svg {
+  fill: @green;
 }
 
 .program-selection__input--error {
@@ -146,6 +154,7 @@
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
+  border: 1px solid @border-grey;
   resize: none;
 }
 
@@ -170,7 +179,7 @@
 @media (min-width: @tablet-width) {
   .program-selection {
     width: 708px;
-    padding-bottom: 65px;
+    padding-bottom: 72px;
   }
 
   .program-selection__fieldset {
@@ -201,7 +210,7 @@
     width: 708px;
     margin: 0;
     margin-bottom: 76px;
-    @start: 23px;
+    @start: 22px;
     background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
   }
 
@@ -248,7 +257,7 @@
   }
 
   .program-selection__input {
-    .set-vertical-padding(10px);
+    .set-vertical-padding(15px);
   }
 
   .program-selection__input--email {
@@ -302,7 +311,7 @@
 @media (min-width: @desktop-width) {
   .program-selection {
     width: 1220px;
-    padding-bottom: 70px;
+    padding-bottom: 83px;
   }
 
   .program-selection__description {
@@ -337,7 +346,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 23px;
+      top: 22px;
       right: -110px;
       width: 110px;
       height: 3px;
