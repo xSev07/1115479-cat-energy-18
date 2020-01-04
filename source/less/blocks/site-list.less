@@ -6,10 +6,19 @@
   display: block;
   padding: 22px 20px 23px;
   .set-font-size(20px);
-  .set-font-weight();
+  .set-font-weight(500);
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -28,6 +37,7 @@
   .site-list__link {
     padding: 7px 0;
     .set-font-size(18px, 25px);
+    .set-font-weight();
   }
 
   .site-list__item--active {

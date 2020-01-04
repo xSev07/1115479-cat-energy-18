@@ -1,54 +1,74 @@
+@weight: 3px;
+
 .goods-additional {
   padding-bottom: 36px;
 }
 
-.goods-additional__container-content {
+.goods-additional__header-wrapper {
+  display: flex;
   width: 320px;
-
-  .set-outline(grey);
-}
-
-.goods-additional__container-additional {
-  padding-bottom: 40px;
+  margin: 0 auto 34px;
+  @start: 14px;
+  background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
 }
 
 .goods-additional__header {
   margin: 0;
+  margin-right: 20px;
+  padding-right: 23px;
+  padding-left: 20px;
   .set-font-size(24px);
   .set-font-weight();
   color: @black;
+  background-color: @white;
+}
 
-  min-height: 60px;
-  .set-outline(yellow);
+.goods-additional__container-content {
+  width: 320px;
+}
+
+.goods-additional__container-additional {
+  margin-bottom: 39px;
 }
 
 .goods-additional__list {
   margin: 0;
   padding: 0 20px;
   list-style: none;
-
-  .set-outline(blue);
 }
 
 .goods-additional__item {
+  display: flex;
+  flex-direction: column;
+  .set-vertical-padding(14px, 18px);
+  border-bottom: 1px solid @border-lighter-grey;
 
-  .set-outline(green);
-  min-height: 129px;
+  &:first-child {
+    border-top: 1px solid @border-lighter-grey;
+  }
 }
 
 .goods-additional__title {
   margin: 0;
+  margin-bottom: 11px;
+  margin-left: 1px;
+  .set-font-size(16px);
+  .set-font-weight();
+  text-transform: uppercase;
 }
 
 .goods-additional__link {
-  .set-font-size(16px);
-  .set-font-weight();
   text-decoration: none;
-  text-transform: uppercase;
   color: @light-black;
 }
 
+.goods-additional__stats {
+  margin-bottom: 15px;
+}
+
 .goods-additional__to-order {
+  width: auto;
+  padding: 9px;
   .set-font-size(16px, 20px);
 }
 
@@ -57,18 +77,28 @@
     padding-bottom: 78px;
   }
 
+  .goods-additional__header-wrapper {
+    width: @tablet-width;
+    margin-bottom: 80px;
+    @start: 22px;
+    background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+  }
+
+  .goods-additional__header {
+    margin-left: 28px;
+    margin-right: 20px;
+    padding-right: 36px;
+    padding-left: 39px;
+    .set-font-size(36px);
+  }
+
   .goods-additional__container-content {
     width: 708px;
     padding: 0;
   }
 
   .goods-additional__container-additional {
-    padding-bottom: 67px;
-  }
-
-  .goods-additional__header {
-    margin-bottom: 65px;
-    .set-font-size(36px);
+    margin-bottom: 69px;
   }
 
   .goods-additional__list {
@@ -76,12 +106,24 @@
   }
 
   .goods-additional__item {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 35px 28px;
+    border: 1px solid @border-lighter-grey;
 
-    min-height: 140px;
+    &:not(:first-child) {
+      border-top: none;
+    }
   }
 
   .goods-additional__title {
+    margin-left: 3px;
     .set-font-size(20px);
+  }
+
+  .goods-additional__to-order {
+    width: 100%;
   }
 }
 
@@ -92,23 +134,47 @@
     padding-bottom: 85px;
   }
 
-  .goods-additional__container-content {
-    display: flex;
-    justify-content: space-between;
-    width: 1180px;
-  }
-
-  .goods-additional__container-additional {
-    width: 865px;
-    padding: 0;
+  .goods-additional__header-wrapper {
+    width: @desktop-width;
+    margin-bottom: 80px;
+    @start: 22px;
+    background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
   }
 
   .goods-additional__header {
-    width: 100%;
-    margin-bottom: 55px;
+    margin-left: 25px;
+  }
+
+  .goods-additional__container-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .goods-additional__container-additional {
+    width: 895px;
+    margin: 0;
   }
 
   .goods-additional__item {
-    min-height: 69px;
+    align-items: center;
+    padding: 15px 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .goods-additional__title {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  .goods-additional__stats {
+    margin: 6px 16px 0 auto;
+  }
+
+  .goods-additional__to-order {
+    width: 245px;
+    margin: 0;
+    .set-vertical-padding(11px, 10px);
   }
 }

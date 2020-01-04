@@ -71,6 +71,7 @@
 
 .programs__to-program {
   position: relative;
+  display: inline-block;
   padding-right: 40px;
   .set-font-size(16px);
   text-decoration: none;
@@ -80,11 +81,27 @@
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    right: 3px;
+    top: 3px;
+    right: 4px;
     width: 24px;
     height: 11px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    padding-right: 59px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    right: 14px;
+    width: 33px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -156,7 +173,12 @@
     .set-font-size(20px);
 
     &::after {
-      top: 9px;
+      top: 5px;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      right: 3px;
     }
   }
 }

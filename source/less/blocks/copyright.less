@@ -1,56 +1,26 @@
-.copyright {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 19px;
-    right: 13px;
-    width: 40px;
-    height: 40px;
-    background: url("../img/htmlacademy.svg") no-repeat;
-  }
-}
-
 .copyright__link {
-  display: block;
-  padding: 30px;
-  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
   .set-font-size(16px);
   font-family: @font-additional;
   color: @grey;
   text-decoration: none;
+  fill: @icon-academy;
+
+  &:hover,
+  &:focus {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .copyright {
-    width: 175px;
-    margin-right: 20px;
-
-    &::after {
-      top: 9px;
-      right: 3px;
-    }
-  }
-
-  .copyright__link {
-    padding: 20px 45px 20px 2px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .copyright {
-    padding: 10px 35px 10px 0;
-    margin-right: 0;
-
-    &::after {
-      top: 0;
-      right: -7px;
-    }
-  }
-
-  .copyright__link {
-    display: inline;
-    padding: 0;
+    width: 164px;
   }
 }
