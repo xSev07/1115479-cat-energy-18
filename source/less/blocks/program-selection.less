@@ -20,11 +20,23 @@
 }
 
 .program-selection__title-wrapper {
+  position: relative;
   display: flex;
   width: 320px;
   margin: 0 8px 34px;
   @start: 14px;
-  background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+  //background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 312px;
+    height: 3px;
+    z-index: -1;
+    background-color: @green;
+  }
 }
 
 .program-selection__title {
@@ -179,7 +191,7 @@
 @media (min-width: @tablet-width) {
   .program-selection {
     width: 708px;
-    padding-bottom: 72px;
+    padding-bottom: 73px;
   }
 
   .program-selection__fieldset {
@@ -195,7 +207,7 @@
   }
 
   .program-selection__fieldset--info-additional {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
   }
 
   .program-selection__fieldset--info-additional .program-selection__title-wrapper {
@@ -211,11 +223,16 @@
     margin: 0;
     margin-bottom: 76px;
     @start: 22px;
-    background: linear-gradient(to bottom, transparent @start, @green @start, @green @start + @weight, transparent @start + @weight) no-repeat;
+
+    &::before {
+      top: 22px;
+      left: -30px;
+      width: @tablet-width;
+    }
   }
 
   .program-selection__title {
-    margin-left: 28px;
+    padding-left: 39px;
     padding-right: 42px;
     .set-font-size(36px);
   }
@@ -299,7 +316,7 @@
     width: 283px;
     margin-right: 61px;
     margin-bottom: 0;
-    .set-vertical-padding(16px, 15px);
+    .set-vertical-padding(16px);
     .set-font-size(20px);
   }
 
@@ -334,23 +351,10 @@
     margin-bottom: 76px;
 
     &::before {
-      content: "";
-      position: absolute;
       top: 23px;
       left: -110px;
-      width: 70px;
-      height: 3px;
-      background-color: @green;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      right: -110px;
-      width: 110px;
-      height: 3px;
-      background-color: @green;
+      width: @desktop-width;
+      background: linear-gradient(to right, @green 70px, transparent 70px, transparent 140px, @green 140px);
     }
   }
 
