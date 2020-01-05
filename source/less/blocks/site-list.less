@@ -10,6 +10,11 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+
+  &:visited {
+    color: inherit;
+  }
 
   &:hover,
   &:focus {
@@ -64,6 +69,7 @@
   }
 
   .site-list__link {
+    padding: 9px 0;
     .set-font-size(20px, 25px);
   }
 }
