@@ -105,7 +105,10 @@
 
   &:active,
   &:focus {
+    margin-top: -1px;
+    margin-bottom: -1px;
     border-color: @grey;
+    border-width: 2px;
   }
 }
 
@@ -115,7 +118,10 @@
 }
 
 .program-selection__input--error {
+  margin-top: -1px;
+  margin-bottom: -1px;
   border-color: @light-coral;
+  border-width: 2px;
 }
 
 .program-selection__input--error + svg {
@@ -155,6 +161,18 @@
   text-transform: uppercase;
   border: 1px solid @border-grey;
   resize: none;
+
+  &:hover {
+    border-color: @border-lighter-grey;
+  }
+
+  &:active,
+  &:focus {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    border-color: @grey;
+    border-width: 2px;
+  }
 }
 
 .program-selection__container-submit {
