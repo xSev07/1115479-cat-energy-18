@@ -130,7 +130,26 @@
   .promo {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 101px;
+    padding-bottom: 103px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -108px;
+      right: 0;
+      z-index: -2;
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-repeat: no-repeat;
+      background-color: @dark-green;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: right;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .promo__wrapper {
@@ -141,28 +160,28 @@
     width: 1220px;
     min-height: 565px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: -108px;
-      left: 610px;
-      z-index: -2;
-      display: block;
-      width: 49.5vw;
-      height: 696px;
-      background-repeat: no-repeat;
-      background-color: @green;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-
-      @media (min-resolution: @retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
-    }
+    //&::after {
+    //  content: "";
+    //  position: absolute;
+    //  top: -108px;
+    //  left: 610px;
+    //  z-index: -2;
+    //  display: block;
+    //  width: 49.5vw;
+    //  height: 696px;
+    //  background-repeat: no-repeat;
+    //  background-color: @green;
+    //  background-image: url("../img/index-background-desktop@1x.jpg");
+    //
+    //  @media (min-resolution: @retina-dppx) {
+    //    background-image: url("../img/index-background-desktop@2x.jpg");
+    //  }
+    //}
   }
 
   .promo__intro {
     width: 450px;
-    margin: 112px 0 40px;
+    margin: 112px 0 43px;
   }
 
   .promo__slogan {
@@ -172,8 +191,8 @@
 
   .promo__image {
     position: absolute;
-    top: 32px;
-    right: 217px;
+    top: 34px;
+    right: 218px;
     z-index: -1;
     width: 552px;
     margin: 0;

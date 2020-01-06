@@ -5,7 +5,6 @@
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
     <script>
-        // Picture element HTML5 shiv
         document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async></script>
@@ -110,23 +109,26 @@
             </div>
           </div>
           <div class="example__slider-wrapper slider">
-            <picture class="slider__image">
+            <picture class="slider__picrute">
               <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1348px)">
-              <source srcset="img/before-tablet@1x.png 1x,img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+              <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
               <img class="slider__before-image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Было">
             </picture>
             <div class="slider__img slider-overlay">
-              <picture class="slider__image">
+              <picture class="slider__picrute">
                 <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1348px)">
-                <source srcset="img/after-tablet@1x.png 1x,img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
                 <img class="slider__after-image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Стало">
               </picture>
             </div>
-            <label class="slider__label">
+            <div class="slider__control-container">
               <span class="slider__explanation-before">Было</span>
-              <input class="slider__range" type="range" name="photo-value" min="1" max="100" step="1">
+              <div class="slider__progress-bar">
+                <input class="slider__range visually-hidden" type="range" name="photo-value" min="1" max="100" step="1">
+                <div class="slider__progress-toggle"></div>
+              </div>
               <span class="slider__explanation-after">Стало</span>
-            </label>
+            </div>
           </div>
         </div>
       </section>
