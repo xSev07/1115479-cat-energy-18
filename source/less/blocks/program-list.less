@@ -20,6 +20,12 @@
   }
 }
 
+.program-list__input {
+  &:focus + label::before {
+    border-color: #bcbcbc;
+  }
+}
+
 .program-list__option label {
   cursor: pointer;
 }
@@ -96,10 +102,6 @@
   width: 20px;
   height: 20px;
   background: url("../img/icon-tick.svg") no-repeat;
-}
-
-.program-list__input {
-  display: none;
 }
 
 @media (min-width: @tablet-width) {

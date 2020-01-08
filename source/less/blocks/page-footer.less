@@ -10,12 +10,8 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  min-height: 59px;
   margin: 0 auto 15px;
-}
-
-.page-footer__logo-image {
-  width: 128px;
+  .set-vertical-padding(12px);
 }
 
 .page-footer__social {
@@ -29,10 +25,10 @@
 @media (min-width: @tablet-width) {
   .page-footer__logo {
     width: 132px;
-    min-height: auto;
     margin: 0;
     margin-right: 80px;
     margin-left: 30px;
+    padding: 0;
   }
 
   .page-footer__menu {
