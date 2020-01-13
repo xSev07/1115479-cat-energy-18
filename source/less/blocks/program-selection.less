@@ -98,19 +98,17 @@
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
-  border: 1px solid @border-grey;
+  border: none;
+  outline: 1px solid @border-grey;
 
   &:hover {
-    border-color: @border-lighter-grey;
+    outline-color: @border-lighter-grey;
   }
 
   &:active,
   &:focus {
-    margin-top: -1px;
-    margin-bottom: -1px;
-    border-color: @grey;
-    border-width: 2px;
-    outline: none;
+    outline-color: @grey;
+    outline-width: 2px;
   }
 }
 
@@ -119,15 +117,17 @@
   color: @green;
 }
 
-.program-selection__input--error {
-  margin-top: -1px;
-  margin-bottom: -1px;
-  border-color: @light-coral;
-  border-width: 2px;
+.program-selection__input:invalid:not(:focus):not(:placeholder-shown) {
+  // margin-top: -1px;
+  // margin-bottom: -1px;
+  // border-color: @light-coral;
+  // border-width: 2px;
+  outline: 2px solid @light-coral;
+  box-shadow: none;
 }
 
-.program-selection__input--error + svg {
-  fill: @light-coral;
+.program-selection__input:invalid:not(:focus):not(:placeholder-shown) + svg {
+  color: @light-coral;
 }
 
 .program-selection__input--email {
@@ -161,19 +161,17 @@
   font-family: @font-main;
   color: @grey;
   text-transform: uppercase;
-  border: 1px solid @border-grey;
+  outline: 1px solid @border-grey;
   resize: none;
 
   &:hover {
-    border-color: @border-lighter-grey;
+    outline: @border-lighter-grey;
   }
 
   &:active,
   &:focus {
-    margin-top: -1px;
-    margin-bottom: -1px;
-    border-color: @grey;
-    border-width: 2px;
+    outline-color: @grey;
+    outline-width: 2px;
   }
 }
 
