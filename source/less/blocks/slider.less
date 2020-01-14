@@ -53,12 +53,37 @@
 }
 
 @media (min-width: @tablet-width) {
+  .slider {
+    position: relative;
+  }
+
   .slider__before-image {
     width: 690px;
     margin-bottom: 10px;
   }
 
+  .slider-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 353px;
+    height: 630px;
+    background: linear-gradient(to bottom, @white 170px, @grey 170px);
+  }
+
+  .slider__after-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 690px;
+    min-width: 690px;
+  }
+
   .slider__control-container {
+    position: relative;
+    z-index: 2;
     width: 588px;
     .set-font-size(20px);
   }

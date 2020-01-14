@@ -79,8 +79,20 @@
 
 @media (min-width: @tablet-width) {
   .example {
+    position: relative;
     padding-bottom: 68px;
-    background: linear-gradient(to bottom, transparent 620px, @light-grey 620px);
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 460px;
+      z-index: -1;
+      background: linear-gradient(to right, @light-grey 70%, @grey 70%);
+    }
   }
 
   .example__wrapper {
