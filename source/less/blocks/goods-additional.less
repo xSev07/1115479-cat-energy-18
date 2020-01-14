@@ -142,13 +142,26 @@
   .goods-additional__header {
     margin: 0;
     margin-bottom: 81px;
-    padding-left: 0;
+    margin-left: -40px;
+    padding-left: 40px;
 
     &::before {
       top: 23px;
-      left: -110px;
-      width: @desktop-width;
-      background: linear-gradient(to right, @green 70px, transparent 70px, transparent 140px, @green 140px);
+      left: auto;
+      width: 100vw;
+      right: auto;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: -50vw;
+      height: 3px;
+      width: 100vw;
+      right: auto;
+      z-index: -1;
+      background: @green;
     }
   }
 
