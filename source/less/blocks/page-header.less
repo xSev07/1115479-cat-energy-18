@@ -35,18 +35,20 @@
     position: relative;
     width: 1220px;
     padding-top: 53px;
-  }
 
-  .page-header--bg-green::after {
-    content: "";
-    position: absolute;
-    top: -108px;
-    left: 610px;
-    z-index: -2;
-    display: block;
-    width: 49.5vw;
-    height: 696px;
-    background: @dark-green;
+    &--bg-green {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -108px;
+        left: 610px;
+        z-index: -2;
+        display: block;
+        width: 49.5vw;
+        height: 696px;
+        background: @dark-green;
+      }
+    }
   }
 
   .page-header__logo-link {
