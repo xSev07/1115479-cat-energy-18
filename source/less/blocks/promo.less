@@ -145,7 +145,7 @@
       background-color: @dark-green;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-size: cover;
-      background-position: right;
+      background-position: left;
 
       @media (min-resolution: @retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
@@ -190,5 +190,15 @@
     margin: 0;
     .set-vertical-padding(15px);
     width: 245px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo {
+
+    &::after {
+      background-size: contain;
+      background-position: right;
+    }
   }
 }
