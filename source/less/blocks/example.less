@@ -205,10 +205,18 @@
   }
 }
 
-@media (min-width: @layout-desktop) {
+@media (min-width: 2150px) {
   .example {
     &::before {
-      background: linear-gradient(to right, @light-grey 70%, @almost-light-grey 70%);
+      background: linear-gradient(to right, @light-grey 65%, @almost-light-grey 65%);
+    }
+  }
+}
+
+@media (min-width: 4300px) {
+  .example {
+    &::before {
+      background: linear-gradient(to right, @light-grey 60%, @almost-light-grey 60%);
     }
   }
 }

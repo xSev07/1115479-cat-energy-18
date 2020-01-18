@@ -101,7 +101,6 @@
   }
 }
 
-//.program-list__input:focus + label::before {
 .program-list__input {
   &:focus + label {
     &::before {
@@ -113,70 +112,6 @@
 .program-list__option label {
   cursor: pointer;
 }
-
-//.program-list__option--radio label {
-//  &::before {
-//    content: "";
-//    position: absolute;
-//    top: 4px;
-//    left: -1px;
-//    width: 30px;
-//    height: 30px;
-//    border: 1px solid @border-very-lighter-grey;
-//    border-radius: 50%;
-//  }
-//
-//  &:hover::before,
-//  &:focus::before {
-//    border-color: #bcbcbc;
-//  }
-//
-//  &:active {
-//    opacity: 0.3;
-//  }
-//}
-
-//.program-list__option--checkbox label {
-//  &::before {
-//    content: "";
-//    position: absolute;
-//    top: 4px;
-//    left: -1px;
-//    width: 30px;
-//    height: 30px;
-//    border: 1px solid @border-lighter-grey;
-//  }
-//
-//  &:hover::before,
-//  &:focus::before {
-//    border-color: #bababa;
-//  }
-//
-//  &:active {
-//    opacity: 0.3;
-//  }
-//}
-
-//.program-list__option--radio input:checked + label::after {
-//  content: "";
-//  position: absolute;
-//  top: 13px;
-//  left: 8px;
-//  width: 12px;
-//  height: 12px;
-//  background-color: @green;
-//  border-radius: 50%;
-//}
-
-//.program-list__option--checkbox input:checked + label::after {
-//  content: "";
-//  position: absolute;
-//  top: 10px;
-//  left: 6px;
-//  width: 20px;
-//  height: 20px;
-//  background: url("../img/icon-tick.svg") no-repeat;
-//}
 
 @media (min-width: @tablet-width) {
   .program-list {
@@ -251,42 +186,6 @@
       }
     }
   }
-
-  //.program-list__option--radio input:checked + label::after {
-  //  top: 12px;
-  //  left: 19px;
-  //  width: 18px;
-  //  height: 18px;
-  //}
-
-  //.program-list__option--checkbox {
-  //  width: 287px;
-  //  margin-bottom: 0;
-  //  padding-left: 59px;
-  //  .set-vertical-padding(14px);
-  //
-  //  &:nth-child(2n) {
-  //    margin-left: auto;
-  //  }
-  //
-  //  &:nth-last-child(n+3) {
-  //    margin-bottom: 25px;
-  //  }
-  //}
-
-  //.program-list__option--checkbox label {
-  //  &::before {
-  //    top: 5px;
-  //    left: 0;
-  //    width: 40px;
-  //    height: 40px;
-  //  }
-  //}
-
-  //.program-list__option--checkbox input:checked + label::after {
-  //  top: 18px;
-  //  left: 10px;
-  //}
 }
 
 @media (min-width: @desktop-width) {
