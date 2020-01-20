@@ -155,10 +155,10 @@
 
 @media (min-width: @desktop-width) {
   .example {
-    padding-bottom: 66px;
+    padding-bottom: 0;
 
     &::before {
-      background: linear-gradient(to right, @light-grey 80%, @almost-light-grey 80%);
+      background: linear-gradient(to right, @light-grey 50%, @almost-light-grey 50%);
     }
   }
 
@@ -169,7 +169,7 @@
 
   .example__container-description {
     width: 530px;
-    margin: 0 40px;
+    margin: 0 40px 65px;
   }
 
   .example__header {
@@ -203,21 +203,6 @@
     width: 690px;
     margin: 0;
     margin-top: auto;
-  }
-}
-
-@media (min-width: 2150px) {
-  .example {
-    &::before {
-      background: linear-gradient(to right, @light-grey 65%, @almost-light-grey 65%);
-    }
-  }
-}
-
-@media (min-width: 4300px) {
-  .example {
-    &::before {
-      background: linear-gradient(to right, @light-grey 60%, @almost-light-grey 60%);
-    }
+    padding-bottom: 66px;
   }
 }
